@@ -164,12 +164,11 @@ _start:
 	push string
 	push loc
 	call ToInt
-
-	add rsp,24
+	add rsp,16
 	
 	push loc
 	push 124
 	call print_2
-	add rsp,24
+	add rsp,16
 
 	call end_suc 
