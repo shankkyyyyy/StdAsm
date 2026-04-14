@@ -1,6 +1,6 @@
 section .data 
 	FilePath db "hello.txt"
-	string db "124"
+	stringmore db "stringmore"
 section .bss
 	cream resb 64
 	loc resb 124 
@@ -164,12 +164,11 @@ _start:
 	push string
 	push loc
 	call ToInt
-
-	add rsp,24
+	add rsp,16
 	
 	push loc
 	push 124
 	call print_2
-	add rsp,24
+	add rsp,16
 
 	call end_suc 
