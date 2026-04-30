@@ -1,6 +1,6 @@
 section .data 
 	FilePath db "hello.txt"
-	string db "124"
+	stringmore db "stringmore"
 section .bss
 	cream resb 64
 	loc resb 124 
