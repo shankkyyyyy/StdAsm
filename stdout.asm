@@ -160,7 +160,10 @@ end_suc:
 	syscall 
 
 _start:
-	
+
+	push stringmore
+	push fork
+	push idc
 	push string
 	push loc
 	call ToInt
